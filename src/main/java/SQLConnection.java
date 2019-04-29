@@ -60,10 +60,4 @@ public class SQLConnection {
         }
         return size;
     }
-
-    public static void main(String[] args) {
-        SQLConnection conn = new SQLConnection("sql.hosted.hro.nl/0976779", "0976779", "iexieboh");
-        conn.getAllTables();
-        System.out.println(conn.getLengthOfResultSet(conn.executeQuery("select * from snake"))); 
-    }
 }
